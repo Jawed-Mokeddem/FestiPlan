@@ -120,7 +120,7 @@ form {
 }
 
 .custom_button_delete:focus {
-    outline: none;
+    outline: noe;
 }
 
 h3 {
