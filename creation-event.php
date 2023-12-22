@@ -132,31 +132,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2>Créer un Nouvel événement</h2>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
             <div>
-                <label>Titre du le événement</label>
+                <label>Titre de l'événement</label>
                 <input type="text" name="title" maxlength="50" value="<?php echo $title; ?>">
                 <span><?php echo $title_err; ?></span>
             </div>
             <div>
-                <label>Descripton</label>
+                <label>Description</label>
                 <textarea name="description" rows="5" collumn="3"><?php echo $description; ?></textarea>
                 <span><?php echo $description_err; ?></span>
             </div>
             <div>
-                <label>Date du le événement</label>
+                <label>Date de l'événement</label>
                 <input type="datetime-local" name="event_date" value="<?php echo $event_date; ?>">
                 <span><?php echo $event_date_err; ?></span>
             </div>
             <div>
-                <label>Liieu</label>
+                <label>Lieu</label>
                 <input type="text" name="location" maxlength="60" value="<?php echo $location; ?>">
                 <span><?php echo $location_err; ?></span>
             </div>
             <div>
-                <label>événement Public</label>
+                <label>Événement public</label>
                 <input type="checkbox" name="is_public" <?php echo $is_public ? 'checked' : ''; ?>>
             </div>
             <div>
-                <label>Image du le événement</label>
+                <label>Image de l'événement</label>
                 <label for="fileInput" class="custom-file-input">Selectionne une photo</label>
                 <input type="file" id="fileInput" name="profile_image" accept="image/*" style="display: none;">
                 <span><?php echo $image_err; ?></span>
